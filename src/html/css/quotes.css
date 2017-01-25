@@ -1,0 +1,158 @@
+/*
+ *
+ *  This file is part of Quotes Server.
+ *
+ *  Quotes Server is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Quotes Server is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with Quotes Server.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+h1.header {
+    background-color: #44a340;
+    color: #eeeeee;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.toright {
+    text-align: right;
+}
+
+a {
+    color: #44a340;
+}
+
+.sidebar {
+    background-color: #eeeeee;
+    color: #44a340;
+}
+
+div.sidebar > ul {
+    list-style-type: none;
+    margin: 1em;
+    padding: 0;
+}
+
+div.sidebar > ul > li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.sidebar > ul > li a:hover {
+    background-color: #44a340;
+    color: #eeeeee;
+}
+
+div.sidebar > ul > li a.active {
+    background-color: #44a340;
+    color: #eeeeee;
+}
+
+div.quotes {
+    background-color: #fff;
+}
+
+div.quote {
+    margin: 1.5em;
+    border-bottom: solid #ddd 1px;
+}
+
+div.quote > h4 {
+    float: right;
+    color: #44a340;
+}
+
+p.date {
+    float: left;
+    color: #999;
+}
+
+p.rating {
+    float: left;
+    color: #999;
+}
+
+div.rating {
+    float: left;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+div.rater {
+    float: right;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+div.rater > span:hover:before,
+div.rater > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    color: gold;
+}
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
